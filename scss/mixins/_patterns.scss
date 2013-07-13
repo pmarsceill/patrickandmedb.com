@@ -1,0 +1,27 @@
+@mixin horizontal-list($margin: $grid-padding) {
+	ul {
+		@include clearfix;
+		li {
+			float: left;
+			margin-right: $margin;
+
+			li:last-child {
+				margin: 0;
+			}
+		}
+	} 
+}
+
+@mixin horizontal-list-right($margin: $grid-padding) {
+	ul {
+		@include clearfix;
+		li {
+			float: right;
+			margin-left: $margin;
+
+			li:first-child {
+				margin: 0;
+			}
+		}
+	} 
+}

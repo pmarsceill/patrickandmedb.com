@@ -1,0 +1,11 @@
+// Import reset utils
+@import "compass/reset/utilities";
+
+// Reset mixin
+@include global-reset;
+
+// Import all Base partials
+@import 'default';
+
+// Import Font-Awesome
+@import 'font-awesome';

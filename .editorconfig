@@ -1,0 +1,22 @@
+; EditorConfig is awesome: http://EditorConfig.org
+
+root = true  ; top-most EditorConfig file
+
+; Unix-style newlines
+[*]
+end_of_line = lf
+
+; 4 space indentation by default
+[*]
+indent_style = space
+indent_size = 2
+
+; Indentation override for all Ruby files
+[*.rb]
+indent_size = 2
+[Rakefile]
+indent_size = 2
+
+; Indentation override for all Sass files
+[*.s[ac]ss]
+indent_size = 2

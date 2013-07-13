@@ -1,0 +1,25 @@
+//
+// Typography settings
+//
+
+$base-font-family     : unquote("coquette,serif");
+$base-font-size       : 1em;
+$base-line-height     : 1.1em;
+
+$fixed-font-family    : unquote("Inconsolata, Consolas, Courier New, monospace");
+$fixed-font-size      : 95%;
+$fixed-line-height    : 1.2;
+
+$serif-font-family    : unquote("Georgia, 'Times New Roman', sans-serif");
+
+$indented-paragraphs  : false;
+$reversed-text        : false;
+
+//
+// Text colors
+//
+
+$text-color           : #333;
+$loud-color           : false;
+$header-color         : $text-color;
+$link-color           : blue;

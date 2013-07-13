@@ -1,0 +1,69 @@
+body {
+	@include base-font;
+}
+h1 {
+	
+}
+h2 {
+	font-family: "jubilat",sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	color: #fff;
+	text-align: center;
+	
+	text-transform: uppercase;
+	letter-spacing: .15em;
+	line-height: 1.6em;
+	font-size: 1.75em;
+	@include at-breakpoint($middle) {
+		letter-spacing: .3em;
+		line-height: 1.12em;
+		font-size: 2.5em;
+		margin-bottom: 1em;
+	}
+	
+}
+h3 {
+	font-family: "jubilat",sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	color: #fff;
+	letter-spacing: .15em;
+	line-height: 1.1em;
+	font-size: 1em;
+	@include at-breakpoint($middle) {
+		letter-spacing: .2em;
+		line-height: 1.0em;
+		font-size: 2.0em;
+		margin-bottom: 1em;
+	}
+}
+h4 {
+	
+}
+p {
+	color: #fff;
+	font-weight: 200;
+	font-size: 1em;
+	line-height: 1.1em;
+	@include at-breakpoint($middle) {
+		line-height: 1.0em;
+		font-size: 1.3em;
+		margin-bottom: 1em;
+	}
+}
+body {
+	background: #000;
+}
+.main {
+	background: url('/a/i/bg-paris.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-top: $grid-padding*2;
+	
+	section {
+		margin-bottom: $grid-padding*3;
+	}
+}

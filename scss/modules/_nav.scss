@@ -1,0 +1,48 @@
+.nav-bar {
+	ul {
+		li {
+			display: inline-block;
+			
+			a {
+				text-decoration: none;
+				font-family: "jubilat",sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				color: #fff;
+				color: #000;
+				text-transform: uppercase;
+				display: block;
+				margin-right: $grid-padding;
+				padding-right: $grid-padding;
+				border-right: 1px solid #aaa;
+				padding-top: $grid-padding;
+				padding-bottom: $grid-padding;
+				font-size: .8em;
+				@include at-breakpoint($middle) {
+					letter-spacing: .12em;
+					font-size: 1.2em;
+				}
+				@include at-breakpoint($large-screen) {
+					letter-spacing: .12em;
+					font-size: 1.4em;
+				}
+				
+				a:hover {
+					
+				}
+			}
+			&:last-child {
+				a {
+					margin-right: 0;
+					padding-right: 0;
+					border-right: 0;
+				}
+			}
+		}
+		text-align: center;
+		
+	}
+	background: #fff;
+	margin-bottom: $grid-padding*2;
+	@include opacity(.75);
+}

@@ -1,0 +1,34 @@
+// Breakpoints
+
+$total-columns  : 6;
+$middle         : 8;
+$large-screen   : 12;
+$largest-screen : 19;
+
+// Grid system
+
+$column-width   : 4em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+
+// Container
+
+.container {
+	@include container($total-columns, $middle, $large-screen);
+}
+
+.inner {
+	padding: $grid-padding/2;
+}
+.mobile {
+	display: block;
+	@include at-breakpoint($middle) {
+		display: none;
+	}
+}
+.middle {
+	display: none;
+	@include at-breakpoint($middle) {
+		display: block;
+	}
+}

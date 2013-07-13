@@ -1,0 +1,32 @@
+.banner {
+	h1 {
+		span {
+			display: none;
+		}
+		background-image: url('/a/i/headline.png');
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		height: 6em;
+		@include at-breakpoint($middle) {
+			height: 10em;
+		}
+		@include at-breakpoint($large-screen) {
+			height: 12em;
+		}
+	}
+	h2 {
+		font-family: "coquette";
+		font-style: normal;
+		font-weight: 300;
+		text-transform: none;
+		letter-spacing: inherit;
+	}
+	height: 15em;
+	@include at-breakpoint($middle) {
+		height: 18em;
+	}
+	@include at-breakpoint($large-screen) {
+		height: 20em;	
+	}
+	
+}
