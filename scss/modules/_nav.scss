@@ -1,8 +1,11 @@
 .nav-bar {
 	ul {
 		li {
-			display: inline-block;
-			
+			@include at-breakpoint($middle) {
+
+				display: inline-block;
+				
+			}
 			a {
 				text-decoration: none;
 				font-family: "jubilat",sans-serif;
@@ -12,15 +15,16 @@
 				color: #000;
 				text-transform: uppercase;
 				display: block;
-				margin-right: $grid-padding;
-				padding-right: $grid-padding;
-				border-right: 1px solid #aaa;
+				
 				padding-top: $grid-padding;
 				padding-bottom: $grid-padding;
 				font-size: .8em;
 				@include at-breakpoint($middle) {
 					letter-spacing: .12em;
-					font-size: 1.2em;
+					font-size: 1.0em;
+					margin-right: $grid-padding;
+					padding-right: $grid-padding;
+					border-right: 1px solid #aaa;
 				}
 				@include at-breakpoint($large-screen) {
 					letter-spacing: .12em;
@@ -43,6 +47,5 @@
 		
 	}
 	background: #fff;
-	margin-bottom: $grid-padding*2;
 	@include opacity(.75);
 }

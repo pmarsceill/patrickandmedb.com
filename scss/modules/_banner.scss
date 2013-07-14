@@ -1,4 +1,10 @@
 .banner {
+	position: relative;
+	.container {
+		z-index: 1;
+		position: relative;
+		padding-top: 3em;
+	}
 	h1 {
 		span {
 			display: none;
@@ -21,12 +27,12 @@
 		text-transform: none;
 		letter-spacing: inherit;
 	}
-	height: 15em;
-	@include at-breakpoint($middle) {
-		height: 18em;
-	}
-	@include at-breakpoint($large-screen) {
-		height: 20em;	
-	}
+////	height: 12em;
+////	@include at-breakpoint($middle) {
+////		height: 18em;
+////	}
+////	@include at-breakpoint($large-screen) {
+////		height: 20em;	
+//	}
 	
 }

@@ -1,3 +1,38 @@
 .map {
-	
+	position: relative;
+	h2 {
+		color: #000;
+	}
+	.bg {
+		background: #fff;
+		@include opacity(.5);
+	}
+	.container {
+		position: relative;
+		z-index: 1;
+		padding-top: 3em;
+		
+		padding-bottom: 3em;
+	}
+	#map-frame {
+		width: 100%;
+		height: 30em;
+	}
+	text-align: center;
+	.location-desc {
+		display: inline-block;
+		width: 50%;
+		text-align: center;
+		background-color: #fffcf1;
+		background-image: url('/a/i/bottom-border.png');
+		background-repeat: no-repeat;
+		background-position: 50% 90%;
+		background-size: 70% auto;
+		padding: 1em 1em 3em;
+		p, h4 {
+			color: #000;
+		}
+		@include border-radius(2em);
+		
+	}
 }
