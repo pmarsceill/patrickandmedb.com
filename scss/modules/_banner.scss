@@ -3,7 +3,7 @@
 	.container {
 		z-index: 1;
 		position: relative;
-		padding-top: 3em;
+		padding-top: 2em;
 	}
 	h1 {
 		span {
@@ -12,7 +12,7 @@
 		background-image: url('/a/i/headline.png');
 		background-repeat: no-repeat;
 		background-size: 100% auto;
-		height: 6em;
+		height: 5em;
 		@include at-breakpoint($middle) {
 			height: 10em;
 		}
