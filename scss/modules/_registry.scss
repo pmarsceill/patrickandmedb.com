@@ -1,6 +1,46 @@
 .registry {
 	position: relative;
 	padding-bottom: 3em;
+	.donate-wrap {
+		border-top: 1px solid #fff;
+		padding-top: $grid-padding * 2;
+	}
+	.description {
+		@include at-breakpoint($middle) {
+			@include span-columns (6, 12);
+			
+		}		
+	}
+	.donate {
+		@include at-breakpoint($middle) {
+
+			@include span-columns (6 omega, 12);
+		}
+		font-family: 'jubilat', serif;
+		text-align: center;
+		label {
+			font-size: 1.6em;
+			font-weight: 200;
+			text-transform: uppercase;
+			line-height: 1.4em;
+			color: #fff;
+			padding-bottom: .5em;
+			letter-spacing: .14em;
+			display: inline-block;
+		}
+		input[type="text"] {
+			width: 4em;
+			display: inline-block;
+			font-size: 1.4em;
+			margin-right: .75em;
+		}
+
+		.helper {
+			font-size: .8em;
+			color: #aaa;
+		}
+		
+	}
 	.container {
 		z-index: 1;
 		position: relative;
@@ -19,6 +59,7 @@
 			overflow: hidden;
 			position: relative;
 			@include border-radius(.5em);
+			@include transition(top 0.15s ease-out);
 			border: .5em solid #fff;
 		
 			&.fishseddy {
@@ -37,14 +78,16 @@
 			}
 			a {
 				display: block;
-				
-			}
-			img {
 				width: 100%;
-				top: 30%;
+				height: 100%;
+				top: 0;
 				left: 0;
 				position: absolute;
-				
+			}
+			img {
+				position: relative;
+				top: 30%;
+				width: 100%;
 				
 			}
 		}

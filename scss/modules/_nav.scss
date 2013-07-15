@@ -4,7 +4,9 @@
 			@include at-breakpoint($middle) {
 
 				display: inline-block;
-				
+				border-right: 1px solid #aaa;
+				margin-right: $grid-padding;
+
 			}
 			a {
 				text-decoration: none;
@@ -15,31 +17,34 @@
 				color: #000;
 				text-transform: uppercase;
 				display: block;
-				
+				position: relative;
 				padding-top: $grid-padding;
 				padding-bottom: $grid-padding;
 				font-size: .8em;
+				
 				@include at-breakpoint($middle) {
 					letter-spacing: .12em;
 					font-size: 1.0em;
-					margin-right: $grid-padding;
 					padding-right: $grid-padding;
-					border-right: 1px solid #aaa;
+					@include transition(top 0.15s ease-out);
+					&:hover {
+						top: -.2em;
+					}
+				
 				}
 				@include at-breakpoint($large-screen) {
 					letter-spacing: .12em;
 					font-size: 1.4em;
 				}
 				
-				a:hover {
-					
-				}
+				
 			}
 			&:last-child {
+				margin-right: 0;
+				border-right: 0;
+
 				a {
-					margin-right: 0;
 					padding-right: 0;
-					border-right: 0;
 				}
 			}
 		}

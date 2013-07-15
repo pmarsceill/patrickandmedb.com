@@ -43,7 +43,7 @@
         <a href="#registry">Registry Information</a>
       </li>
       <li>
-        <a href="#location">Location & Directions</a>
+        <a href="#location">Location &amp; Directions</a>
       </li>
     </ul>
   </nav>
@@ -124,7 +124,25 @@
                 <a href="http://apps.agenne.com/RegistryDisplay.cfm?id=26912&cid=236"><img src="/a/i/fishseddy.jpg" alt="Fishs Eddy"></a>
               </li>
             </ul>
-  
+            <div class="container">
+              <div class="donate-wrap">
+                <p class="description">In lieu of giving a gift, a donation may also be made toward Patrick &amp; Medb's honeymoon in Europe:</p>
+                
+                <form class="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_donations">
+                <input type="hidden" name="business" value="UT5WBHAW7MQ6C">
+                <label for="amount">$</label>
+                <input type="text" name="amount" id="amount">
+                <input type="hidden" name="item_name" id="item_name" value="Patrick and Medb's Honeymoon">
+                <input type="hidden" name="lc" value="US">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">
+                <input type="submit" name="submit" class="btn" value="Donate with PayPal">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+              </div>
+
+            </div>
          
         </section>
         <section class="map" id="location">
@@ -134,10 +152,13 @@
           <div class="container">
             <h2>Location &amp; Directions</h2>
             <article class="location-desc">
-              <h4>Ceremony &amp; Reception</h4>
-              <p class="adr">
-               <span>352 Jefferson Road</span>
-               <span>Princeton, New Jersey</span>
+              <div class="bg"></div>
+              <div class="inner">
+                <h4>Ceremony &amp; Reception</h4>
+                <p class="adr">
+                 <span>352 Jefferson Road</span>
+                 <span>Princeton, New Jersey</span>
+              </div>
                
              </p>
            </article>
