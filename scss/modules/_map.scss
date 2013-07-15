@@ -42,7 +42,7 @@
 		p, h4 {
 			color: #000;
 		}
-		@include border-radius(1em);
+		@include border-radius(.25em);
 		
 	}
 }
