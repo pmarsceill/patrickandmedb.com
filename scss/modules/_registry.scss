@@ -61,7 +61,8 @@
 			@include border-radius(.5em);
 			@include transition(top 0.15s ease-out);
 			border: .5em solid #fff;
-		
+		  min-width: 3em;
+      min-height: 1em;
 			&.fishseddy {
 				img {
 					top: 5%;					
