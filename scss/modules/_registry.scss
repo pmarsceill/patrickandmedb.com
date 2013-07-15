@@ -63,11 +63,8 @@
 			border: .5em solid #fff;
 		  min-width: 3em;
       min-height: 1em;
-			&.fishseddy {
-				img {
-					top: 5%;					
-				}
-			}
+      z-index: 1;
+			
 			&:first-child {
 //				margin-left: 2em;
 			}
@@ -87,10 +84,22 @@
 			}
 			img {
 				position: relative;
-				top: 30%;
+				top: .5em;
+        @include at-breakpoint($middle) {
+          top: 30%;
+        }
 				width: 100%;
-				
+        height: auto;
+				z-index: 99;
 			}
+      &.fishseddy {
+        img {
+          top: .5em;
+          @include at-breakpoint($middle) {
+            top: 5%;          
+          }
+        }
+      }
 		}
 	}
 }

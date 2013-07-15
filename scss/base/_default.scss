@@ -96,6 +96,9 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 	-moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
 	transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
 }
+input[type="submit"] {
+	-webkit-appearance: none;
+}
 .main {
 	background: url('/a/i/bg-paris.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
