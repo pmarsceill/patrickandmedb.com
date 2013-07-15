@@ -14,7 +14,9 @@
 			margin-bottom: $grid-padding*2;
 			width: 100%;
 			&.name {
-				width: 40%;
+				@include at-breakpoint(35em) {
+					width: 40%;
+				}
 			}
 			table {
 				margin: 1em auto 0 auto;
@@ -40,7 +42,8 @@
 		}
 		.ss-choice-item {
 			display: inline-block;
-			width: 40%;
+			width: 45%;
+			vertical-align: top;
 		}
 		.guests {
 			display: none;
