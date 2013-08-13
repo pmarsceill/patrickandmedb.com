@@ -11,16 +11,7 @@
 		position: relative;
 		z-index: 1;
 		padding-top: 3em;
-		
 		padding-bottom: 3em;
-    
-    a {
-      color: #000;
-      font-family: 'jubilat', serif;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-size: 1.2em;
-    }
 	}
 	#map-frame {
 		width: 100%;
@@ -30,27 +21,41 @@
 	.location-desc {
 		overflow: hidden;
 		position: relative;
-		.bg {
-			background: #fffcf1;
-			@include opacity(.8);
-		}
-		.inner {
-			position: relative;
-			
-		}
-		display: inline-block;
-		width: 50%;
-		text-align: center;
-		background-color: #fffcf1;
-		background-image: url('/a/i/bottom-border.png');
-		background-repeat: no-repeat;
-		background-position: 50% 90%;
-		background-size: 70% auto;
-		padding: 1em 1em 3em;
-		p, h4 {
-			color: #000;
-		}
-		@include border-radius(.25em);
-		
-	}
+    @include at-breakpoint($middle) {
+      @include span-columns(6,12);
+      &:nth-child(2) {
+        @include omega;
+      }
+    }
+    .bg {
+     background: #fffcf1;
+     @include opacity(.8);
+   }
+   .inner {
+     position: relative;
+
+   }
+   
+
+
+   text-align: center;
+   background-color: #fffcf1;
+   background-image: url('/a/i/bottom-border.png');
+   background-repeat: no-repeat;
+   background-position: 50% bottom;
+   background-size: 70% auto;
+   padding-top: $grid-padding;
+   padding-bottom: $grid-padding;
+   margin-bottom: $grid-padding;
+   p, h4 {
+     color: #000;
+   }
+   ul {
+    li {
+      margin-bottom: .5em;
+    }
+  }
+  @include border-radius(.25em);
+
+}
 }

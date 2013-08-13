@@ -4,6 +4,10 @@
 	box-shadow: $horiz $vert $blur $spread, $horiz2 $vert2 $blur2 $spread2, $horiz3 $vert3 $blur3 $spread3, $horiz4 $vert4 $blur4 $spread4, $horiz5 $vert5 $blur5 $spread5;
 }		 
 .btn {
+  text-decoration: none;
+  white-space: nowrap;
+  color: #000;
+  font-weight: 400;
 	border: 3px solid;
 	padding: .25em .75em;
 	font-family: 'jubilat', serif;
